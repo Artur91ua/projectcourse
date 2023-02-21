@@ -2,7 +2,6 @@ import requests
 key = "1VQDHXQ8EF73QTHESPT7UHU9AJQPLXXL"
 ENDPOINT = "http://164.92.218.36:8080/api/countries"
 
-
 def payload():
     return """<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
     <country>
@@ -22,7 +21,6 @@ def payload():
     </country>
 </prestashop>"""
 
-
 def country_id(create_country_response):
     body = create_country_response.text
     country_id00 = body.split('</id>')
@@ -35,7 +33,6 @@ def test_can_create_country():
     assert create_country_response.status_code == 201
     get_created_country_response = requests.get(ENDPOINT + f'/{country_id(create_country_response)}', auth=(key, ""))
     assert get_created_country_response.status_code == 200
-
 
 def test_can_update_country():
     create_country_response = requests.post(ENDPOINT, auth=(key, ""), data=f'{payload()}')
@@ -59,8 +56,6 @@ def test_can_update_country():
 </prestashop>"""
     update_country_response = requests.put(ENDPOINT + f'/{country_id(create_country_response)}', auth=(key, ""), data=new_country_payload)
     assert update_country_response.status_code == 405
-
-
 
 def test_can_delete_country():
     create_country_response = requests.post(ENDPOINT, auth=(key, ""), data=f'{payload()}')
