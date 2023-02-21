@@ -61,6 +61,7 @@ def test_can_update_country():
     assert update_country_response.status_code == 405
 
 
+
 def test_can_delete_country():
     create_country_response = requests.post(ENDPOINT, auth=(key, ""), data=f'{payload()}')
     assert create_country_response.status_code == 201
