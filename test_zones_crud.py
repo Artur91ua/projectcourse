@@ -18,6 +18,11 @@ def zone_id(create_zone_response):
     zone_id = create_zone_response.text.split('</id>')[0].split('<id>')[1][9:-3]
     return zone_id
 
+#get zones
+def test_can_call_endpoint():
+    response = requests.get(ENDPOINT, auth=(key,""))
+    assert response.status_code == 200
+    
 #create new zone
 def test_can_create_zone():
     create_zone_response = requests.post(ENDPOINT, auth=(key,""), data = f'{payload()}')
