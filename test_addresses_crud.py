@@ -37,6 +37,11 @@ def address_id(create_address_response):
     address_id = create_address_response.text.split('</id>')[0].split('<id>')[1][9:-3]
     return address_id
 
+#get addresses
+def test_can_get_addresses():
+    response = requests.get(ENDPOINT, auth=(key,""))
+    assert response.status_code == 200
+    
 #create new address
 def test_can_create_address():
     create_address_response = requests.post(ENDPOINT, auth=(key,""), data = f'{payload()}')
