@@ -13,12 +13,14 @@ We recommend saving py.files, either downloaded or unzipped, under their origina
   
 Besides, make sure that the folder you have saved downloaded tests contains only pytest- executable files.
 
-## Pytest installation
-Python and pytest are needed to run tests from this directory.
-If your python version is 3.7+, you can start with pytest installation and run in your command line ```pip install -U pytest```.
+## Pytest and requests installation
+Python, pytest and HTTP library requests are needed to run tests from this directory.
 
-After installation check that you have installed the correct version:
-```$ pytest --version pytest 7.2.1```
+If your python version is 3.7+, you can start with pytest installation and run in your command line ```pip install -U pytest```. After installation check that you have installed the correct version: ```$ pytest --version pytest 7.2.1```
+
+To install requests, run in your command line ```pip install requests``` (or ```python -m pip install requests```).
+
+If you have any problems installing the software, we recommend referring to the official documentation  at (https://docs.pytest.org/), (https://requests.readthedocs.io/) to resolve this issue.
 
 ## Test execution
 The general way to execute tests is to run ```pytest``` in your command line while being in the directory where you have saved downloaded files.
@@ -31,5 +33,4 @@ To display the status of each test during execution, call pytest through ```pyte
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
