@@ -19,7 +19,7 @@ def zone_id(create_zone_response):
     return zone_id
 
 #get zones
-def test_can_call_endpoint():
+def test_can_get_zones():
     response = requests.get(ENDPOINT, auth=(key,""))
     assert response.status_code == 200
     
