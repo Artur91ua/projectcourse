@@ -35,6 +35,10 @@ def payload():
         </associations>
     </category>
 </prestashop>"""
+#get categories
+def test_can_get_categories():
+    response = requests.get(ENDPOINT, auth=(key,""))
+    assert response.status_code == 200
 #find categories id
 def categories_id(create_categories_response):
     categories_id = create_categories_response.text.split('</id>')[0].split('<id>')[1][9:-3]
