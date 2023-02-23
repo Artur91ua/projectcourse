@@ -1,4 +1,3 @@
-
 import requests
 key = "1VQDHXQ8EF73QTHESPT7UHU9AJQPLXXL"
 ENDPOINT = "http://164.92.218.36:8080/api/zones"
