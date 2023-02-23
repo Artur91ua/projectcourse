@@ -35,7 +35,7 @@ def payload():
         </associations>
     </category>
 </prestashop>"""
-#get categories
+#get  categories
 def test_can_get_categories():
     response = requests.get(ENDPOINT, auth=(key,""))
     assert response.status_code == 200
