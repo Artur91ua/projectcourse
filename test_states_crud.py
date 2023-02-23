@@ -14,6 +14,10 @@ def payload():
         <active></active>  
     </state>
 </prestashop>"""
+#get states
+def test_can_get_states():
+    response = requests.get(ENDPOINT, auth=(key,""))
+    assert response.status_code == 200
 #find states id
 def states_id(create_states_response):
     states_id = create_states_response.text.split('</id>')[0].split('<id>')[1][9:-3]
