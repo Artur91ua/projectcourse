@@ -5,9 +5,9 @@ This repository includes automated tests to check REST API of the online store M
 ## Download
 Before executing tests you have to download the py.file from this repository or the whole repository.
 
-If you want to download the repository, click the small arrow on the green ```Code``` button at the top right of the repo contents. From here, select ```Download Zip```. This will download the entire GitHub repository as a zipped folder.
+If you want to download the repository, click the small arrow on the green ```Code``` button at the top right of the repo contents. From here, select ```Download Zip```. This will download the entire GitHub repository as a zipped folder and you have to unzip it to run tests.
 
-If you need a single file, start by clicking the ```Go to file``` button at the top of the repo contents. From the list of all files in the repository choose the one you need, right-click the ```Raw``` button at the top of the file, select ```Save Link As…```, choose the location on your computer where you want to save the file, and select ```Save```.
+If you need a single file, start by clicking the ```Go to file``` button at the top of the repo contents. From the list of all files in the repository choose the one you need, right-click the ```Raw``` button at the top of the file, select ```Save Link As…```, choose the location on your computer where you want to save the file, and select ```Save```. 
 
 We recommend saving py.files, either downloaded or unzipped, under their original names. If you want to change the file's name, make sure it matches the pattern ```test_*.py``` or ```*_test.py```.
   
