@@ -24,9 +24,7 @@ If you have any problems installing the software, we recommend referring to the 
 
 ## Test execution
 The general way to execute tests is to run ```pytest``` in your command line while being in the directory where you have saved downloaded files.
-If it doesn't work, try calling Pytest through ```python
-python -m pytest
-```.
+If it doesn't work, try calling Pytest through ```python -m pytest```.
 
 By default, Pytest runs all files of the form test_*.py or *_test.py in the current directory and its subdirectories. To execute a specific file in the directory, run ```pytest –v .\test_name``` in the command line where ```test_name``` stands for the actual name of the file. To execute a single test in the file, run ```pytest –v .\test_file_name::test_name``` in the command line, where ```test_file_name``` stands for the actual name of the file and ```test_name```stands for the actual name of the test. 
 
