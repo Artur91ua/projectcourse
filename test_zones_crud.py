@@ -36,7 +36,7 @@ def test_can_update_zone():
     assert create_zone_response.status_code == 201
     new_zone_payload = f"""<prestashop>
             <zone>
-                <id>{zone_id(create_address_response)}</id>
+                <id>{zone_id(create_zone_response)}</id>
                 <name>Atlantis</name>
                 <active></active>
             </zone>
