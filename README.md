@@ -1,6 +1,6 @@
 # Prestashop API Autotesting with Pytest
 
-This repository includes automated tests to check REST API of the online store MyShop, running on CMS Prestashop. Tests were designed for CRUD operations of five endpoints and for each endpoint check there is a separate .py file.
+This repository includes automated tests to check REST API of the online store MyShop, running on CMS Prestashop. Tests were designed for CRUD operations of six endpoints and for each endpoint check there is a separate .py file.
 
 ## Download
 Before executing tests you have to download the py.file from this repository or the whole repository.
