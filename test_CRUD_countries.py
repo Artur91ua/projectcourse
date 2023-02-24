@@ -30,6 +30,10 @@ def country_id(create_country_response):
     country_id = country_id0[1][9:-3]
     return country_id
 
+def test_can_get_countries():
+    response = requests.get(ENDPOINT, auth=(key,""))
+    assert response.status_code == 200
+    
 def test_can_create_country():
     create_country_response = requests.post(ENDPOINT, auth=(key, ""), data=f'{payload()}')
     assert create_country_response.status_code == 201
